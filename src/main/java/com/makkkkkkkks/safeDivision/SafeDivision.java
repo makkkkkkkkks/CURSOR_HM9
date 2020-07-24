@@ -11,6 +11,9 @@ public class SafeDivision {
         int b = scanner.nextInt();
         try {
             System.out.println(a / b);
+            if (b == 0) {
+                throw new ArithmeticException("division by 0");
+            }
         } catch (ArithmeticException ArithmeticException) {
             System.out.println("You're trying to divide by zero, reenter b ");
             b = scanner.nextInt();
