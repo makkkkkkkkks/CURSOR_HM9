@@ -14,7 +14,7 @@ public class Executor {
         try {
             RethrowingExceptions.someMethod();
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Catch");;
         }
     }
 }

@@ -2,11 +2,7 @@ package main.java.com.makkkkkkkks.rethrowingExceptions;
 
 public class RethrowingExceptions {
     public static void someMethod() {
-        try {
-            someMethod2();
-        } catch (NullPointerException e) {
-            e.printStackTrace(System.out);
-        }
+        someMethod2();
         {
             System.out.println("Caught inside someMethod1.");
         }
